@@ -1,4 +1,4 @@
-import random 
+import random
 # quick sort algorithm 
 
 def partition(arr,low,high):
@@ -18,8 +18,12 @@ def quick_sort(arr, low, high):
         quick_sort(arr, low, p - 1)
         quick_sort(arr, p + 1, high)
 
+def quick_sort_interface(_list):
+    quick_sort(_list,0,len(_list) - 1)
+
+
 _list = [21, 4, 1, 3, 9, 20, 25, 6, 21, 14]
 print(_list)
-quick_sort(_list,0,len(_list) - 1)
+quick_sort_interface(_list)
 print(_list)
     
