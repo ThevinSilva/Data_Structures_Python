@@ -2,9 +2,6 @@ import random
 import time
 
 
-
-
-
 #r-1.1
 
 def is_multiple(n,m):

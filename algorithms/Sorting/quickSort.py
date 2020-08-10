@@ -9,6 +9,7 @@ def partition(arr,low,high):
         if arr[i] <= arr[pivot]:
             border += 1
             arr[border], arr[i] = arr[i], arr[border]
+    print(arr)
     arr[border + 1], arr[pivot] = arr[pivot], arr[border + 1]
     return border + 1
 
@@ -26,4 +27,4 @@ _list = [21, 4, 1, 3, 9, 20, 25, 6, 21, 14]
 print(_list)
 quick_sort_interface(_list)
 print(_list)
-    
+print([n for n in range(100,20,-1)])
