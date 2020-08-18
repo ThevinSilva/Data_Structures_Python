@@ -130,7 +130,4 @@ class quadrilateral(Polygon):
 
         #reuse code by breaking the quad into two trangles
 
-        
-
-
 print(quadrilateral(13,14,3,13).area())

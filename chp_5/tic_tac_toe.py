@@ -18,6 +18,7 @@ class TicTacToe:
             temp += 'O WON'
             return temp
         return temp
+        
     def _win_check(self,mark):
         board = self._board
         #horizontal
@@ -28,7 +29,7 @@ class TicTacToe:
             #horizontal
             if set(board[i]) == set(mark):
                 return True
-        #diaginals
+        #diagonals
         statement =  mark == board[0][0] == board[1][1] == board[2][2] or mark == board[0][2] == board[1][1] == board[2][0]
         return True if statement else False
 

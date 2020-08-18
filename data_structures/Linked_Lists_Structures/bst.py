@@ -60,7 +60,9 @@ class Binary_Search_Tree(object):
         print(root.val)  
 
         # Process left child  
-        self._display(root.left, space)  
+        self._display(root.left, space) 
+
+
 
 if __name__ == '__main__':
     bst = Binary_Search_Tree(15)

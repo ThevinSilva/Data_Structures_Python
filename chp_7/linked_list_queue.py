@@ -24,7 +24,7 @@ class Queue:
         return temp
 
     def enqueue(self,value):
-        newest = self._Node(value, self._head)
+        newest = self._Node(value, None)
         if self.is_empty():
             self._head = newest
         else:

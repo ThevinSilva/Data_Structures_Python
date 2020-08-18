@@ -1,4 +1,3 @@
-
 class _DoublyLinkedBase:
     class _Node:
         __slots__ = '_element','_next','_prev'
@@ -39,10 +38,3 @@ class _DoublyLinkedBase:
         temp = Node 
         Node._element = Node._next = Node._prev = None
         return temp._element
-class Deque(_DoublyLinkedBase):
-    def first(self):
-        if 
-        return self._header._next._element
-
-     def last(self):
-         return self._tail._next._element   
