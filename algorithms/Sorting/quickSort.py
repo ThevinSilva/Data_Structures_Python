@@ -1,6 +1,10 @@
 import random
-# quick sort algorithm 
-
+#quick sort
+# time:
+#   - best case: O(log n)
+#   - worst case: O(n^2)
+#space:
+#   - O(log n) inplace
 def partition(arr,low,high):
     pivot = high
     border = low - 1

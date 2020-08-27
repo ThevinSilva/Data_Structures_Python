@@ -3,7 +3,7 @@ class PositionalLists(_DoublyLinkedBase):
     
 #------------------------------- Nested Position List -------------------------------
     class Position:
-        def __init__(self,node,container):
+        def __init__(self,container,node):
             self._container = container
             self._node = node
         
@@ -18,6 +18,8 @@ class PositionalLists(_DoublyLinkedBase):
             return not (self == other)
 #------------------------------- utility method -------------------------------
     def _validate(self,p):
+        print(p._container)
+        print(self)
         if not isinstance(p,self.Position):
             raise TypeError('p must be proper position type')
         if p._container is not self:
@@ -55,7 +57,7 @@ class PositionalLists(_DoublyLinkedBase):
     def add_first(self,e):
         return self._insert_between(e, self._header, self._header._next)
     
-    def add_last(self,p,e):
+    def add_last(self,e):
         return self._insert_between(e, self._footer._prev, self._footer)
     
     def add_before(self,p,e):

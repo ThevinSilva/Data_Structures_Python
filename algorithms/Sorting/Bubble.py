@@ -2,7 +2,7 @@ import random
 
 #bubble sort algorithm
 #space:
-#   - O(log n) inplace
+#   - O(1) inplace
 
 _list =random.sample(range(100),15)
 print(_list)

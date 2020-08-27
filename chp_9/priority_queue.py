@@ -1,4 +1,3 @@
-from ..chp_7 import positional_list
 
 class PriorityQueue:
     class _Item:
@@ -19,5 +18,9 @@ class PriorityQueue:
             '''
                 - Return True if the priority queue is empty 
             '''
-
             return len(self) == 0
+
+        def __gt__(self,other):
+            if not isinstance(other,type(self)):
+                raise ValueError('The adjacent value cannot be compared to this value')
+            return self._value > other._value

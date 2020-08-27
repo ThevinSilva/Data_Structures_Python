@@ -1,4 +1,4 @@
-from binary_tree import BinaryTree
+from .binary_tree import BinaryTree
 class Queue:
     class _Node:
         __slots__ = '_element', '_next'
